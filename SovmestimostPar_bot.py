@@ -354,18 +354,4 @@ async def ifif(message : types.Message):
 
 
 
-@server.route('/' + TOKEN, methods=['POST'])
-def get_message():
-    json_string = request.get_data().deode('utf-8')
-    update = aiogram.types.Update.de_json(json_string)
-    dp.process_new_updates([update])
-    return '!', 200
-
-@server.route('/')
-def webhook():
-    dp.remove_webhook()
-    dp.set_webhook(url=APP_URL)
-    return '!', 200
-
-if __name__ == '__main__':
-    server.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+dp.polling(none_stop = True, skip_updates = True)
