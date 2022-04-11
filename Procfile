@@ -1,0 +1,1 @@
+web: python3 SovmestimostPar_bot.py
