@@ -1,3 +1,1 @@
-worker: python SovmestimostPar_bot.py
-
-heroku ps:scale worker=1
+web: python SovmestimostPar_bot.py
