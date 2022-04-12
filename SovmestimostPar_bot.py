@@ -3,14 +3,29 @@ from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
 from flask import Flask, request
+from aiogram.utils.executor import start_webhook
 
 import configg
 
-TOKEN = configg.config['token']
+TOKEN = ('5261751687:AAEIwBWE2dTmxlwbSYikNbYVqSXyF6_Aw2w')
 bot = Bot(TOKEN)
 dp = Dispatcher(bot)
-APP_URL = f' https://sovmestimostparbot.herokuapp.com/'
-server = Flask(__name__)
+HEROKU_APP_NAME = os.getenv('sovmestimostparbot')
+
+WEBHOOK_HOST = f'https://{HEROKU_APP_NAME}.herokuapp.com'
+WEBHOOK_PATH = f'/webhook/{TOKEN}'
+WEBHOOK_URL = f'{WEBHOOK_HOST}{WEBHOOK_PATH}' 
+
+WEBAPP_HOST = '0.0.0.0'
+WEBAPP_PORT = os.getenv('PORT', default=8000)
+
+async def on_startup(dispatcher):
+    await bot.set_webhook(WEBHOOK_URL, drop_pending_updates=True)
+
+
+async def on_shutdown(dispatcher):
+    await bot.delete_webhook()
+
 
 async def on_startup(_):
 	print('Бот запустился')
@@ -351,7 +366,14 @@ async def ifif(message : types.Message):
     	await bot.send_message(message.from_user.id, 'Я вас не понимаю. Возможно вы написали без пробелов между знаками зодиака и + должен быть пробел')
 
 
-
-
-
-dp.polling(none_stop = True, skip_updates = True)
+ if __name__ == '__SovmestimostPar_bot__':
+    logging.basicConfig(level=logging.INFO)
+    start_webhook(
+        dispatcher=dp,
+        webhook_path=WEBHOOK_PATH,
+        skip_updates=True,
+        on_startup=on_startup,
+        on_shutdown=on_shutdown,
+        host=WEBAPP_HOST,
+        port=WEBAPP_PORT,
+    )
