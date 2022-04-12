@@ -24,19 +24,6 @@ async def on_startup(dispatcher):
 async def on_shutdown(dispatcher):
     await bot.delete_webhook()
 
- if __name__ == '__SovmestimostPar_bot__':
-    logging.basicConfig(level=logging.INFO)
-    start_webhook(
-        dispatcher=dp,
-        webhook_path=WEBHOOK_PATH,
-        skip_updates=True,
-        on_startup=on_startup,
-        on_shutdown=on_shutdown,
-        host=WEBAPP_HOST,
-        port=WEBAPP_PORT,
-    )
-
-
 @dp.message_handler(commands=['start'])
 async def command_start(message : types.Message):
 	await bot.send_message(message.from_user.id, 'Привет, я бот проверки на совместимость по знаку зодиака. Напиши ваши знаки зодиака в этот бот.')
@@ -374,7 +361,7 @@ async def ifif(message : types.Message):
 	
 	
 	
-
+executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
 
 	
 
