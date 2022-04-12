@@ -1,1 +1,1 @@
-web: python SovmestimostPar_bot.py
+worker: python SovmestimostPar_bot.py
