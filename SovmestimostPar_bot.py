@@ -363,7 +363,7 @@ async def ifif(message : types.Message):
     	await bot.send_message(message.from_user.id, 'Я вас не понимаю. Возможно вы написали без пробелов между знаками зодиака и + должен быть пробел')
 
 
- if __name__ == '__SovmestimostPar_bot__':
+if __name__ == '__SovmestimostPar_bot__':
     logging.basicConfig(level=logging.INFO)
     start_webhook(
         dispatcher=dp,
