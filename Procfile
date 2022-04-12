@@ -1,1 +1,1 @@
-web: python SovmestimostPar_bot.py
+web: python SovmestimostPar_bot.py runserver 0.0.0.0:$PORT
