@@ -25,9 +25,6 @@ async def on_shutdown(dispatcher):
     await bot.delete_webhook()
 
 
-async def on_startup(_):
-	print('Бот запустился')
-
 @dp.message_handler(commands=['start'])
 async def command_start(message : types.Message):
 	await bot.send_message(message.from_user.id, 'Привет, я бот проверки на совместимость по знаку зодиака. Напиши ваши знаки зодиака в этот бот.')
@@ -362,8 +359,9 @@ async def ifif(message : types.Message):
     	await bot.send_message(message.from_user.id, 'Совместимы на 100%. Это союз двух неуловимых и загадочных личностей, одна из которых к тому же и женщина.')
     else:
     	await bot.send_message(message.from_user.id, 'Я вас не понимаю. Возможно вы написали без пробелов между знаками зодиака и + должен быть пробел')
-
-
+	
+	
+	
 if __name__ == '__SovmestimostPar_bot__':
     logging.basicConfig(level=logging.INFO)
     start_webhook(
@@ -375,3 +373,6 @@ if __name__ == '__SovmestimostPar_bot__':
         host=WEBAPP_HOST,
         port=WEBAPP_PORT,
     )
+
+	
+
