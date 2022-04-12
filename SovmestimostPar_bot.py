@@ -2,10 +2,7 @@ import os
 from aiogram import Bot, types
 from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
-from flask import Flask, request
 from aiogram.utils.executor import start_webhook
-
-import configg
 
 TOKEN = ('5261751687:AAEIwBWE2dTmxlwbSYikNbYVqSXyF6_Aw2w')
 bot = Bot(TOKEN)
