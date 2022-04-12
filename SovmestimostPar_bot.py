@@ -24,7 +24,7 @@ async def on_startup(dispatcher):
 async def on_shutdown(dispatcher):
     await bot.delete_webhook()
 
-if __name__ == '__SovmestimostPar_bot__':
+ if __name__ == '__SovmestimostPar_bot__':
     logging.basicConfig(level=logging.INFO)
     start_webhook(
         dispatcher=dp,
