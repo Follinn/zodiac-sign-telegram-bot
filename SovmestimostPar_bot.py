@@ -31,7 +31,7 @@ async def command_start(message : types.Message):
 	await bot.send_message(message.from_user.id, 'ПРИМЕР водолей + овен. ПРОБЕЛ между + и знаками зодиака ОБЯЗАТЕЛЕН' )
 
 @dp.message_handler()
-async def ifif(message : types.Message):
+async def oven(message : types.Message):
 
     if message.text.lower() == 'овен + овен':
 	    await bot.send_message(message.from_user.id, 'Совместимы на 91%. Они одинаковые, но есть одно но: каждый из них настолько ярко проявляет свои гендерные роли, что они кажутся совершенно разными.')
@@ -57,7 +57,11 @@ async def ifif(message : types.Message):
     	await bot.send_message(message.from_user.id, 'Совместимы на 82%. Она — яркая и напористая, он — непредсказуемый и свободолюбивый. Сумеет ли она удержать его? Сумеет ли он оказать ей достойное сопротивление, но не переборщить?')
     elif message.text.lower() == 'овен + рыбы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 87%. Они очень разные. Она — яркость и напор, он — мягкость и бездействие. Возможно, она сумеет зарядить его.')
-    elif message.text.lower() == 'телец + овен' :
+    
+@dp.message_handler()
+async def telec(message : types.Message):
+
+    if message.text.lower() == 'телец + овен' :
         await bot.send_message(message.from_user.id, 'Совместимы на 72%. Она — мягкая, но упрямая, он — строптивый, порывистый, страстный. Он вполне может показать ей, какая энергия прячется внутри нее самой. Но нужно ли ей это?')    
     elif message.text.lower() == 'телец + телец' :
     	await bot.send_message(message.from_user.id, 'Совместимы на 87%. Они стоят друг друга. Наконец-то у каждого их них нашелся достойный друг. Или соперник?')
@@ -82,9 +86,10 @@ async def ifif(message : types.Message):
     elif message.text.lower() == 'телец + рыбы' :
     	await bot.send_message(message.from_user.id, 'Совместимы на 91%. Они неплохо подходят друг другу. Она — приземленная и заботливая, он — отстраненный и чувствительный.')
     
-    #близнецы
+@dp.message_handler()
+async def bliz(message : types.Message):
 
-    elif messge.text.lower() == 'близнецы + овен':
+    if messge.text.lower() == 'близнецы + овен':
     	await bot.send_message(message.from_user.id, 'Совместимы на 83%. Они составят интересную пару: она — непостоянная и ускользающая, он — страстный и импульсивный. Сумеет ли он ее удержать?')
     elif messge.text.lower() == 'близнецы + телец':
     	await bot.send_message(message.from_user.id, 'Совместимы на 73%. Она — легкая и непостоянная, он — сама стабильность и постоянство. Смогут ли они вместе достичь гармонии?')
@@ -109,9 +114,10 @@ async def ifif(message : types.Message):
     elif messge.text.lower() == 'близнецы + рыбы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 82%. Женщина-Близнецы и мужчина-Рыбы вполне могут составить счастье друг друга.')
 
-    #рак   
+@dp.message_handler()
+async def rak(message : types.Message):  
 
-    elif message.text.lower() == 'рак + овен':
+    if message.text.lower() == 'рак + овен':
     	await bot.send_message(message.from_user.id, 'Совместимы на 91%. Она — нежная, неуловимая, смешливая, скромная и сексуальная одновременно. Он — сильный, смелый, активный — огненный! Теперь понимаете, почему они мечтают друг о друге?')
     elif message.text.lower() == 'рак + телец':
     	await bot.send_message(message.from_user.id, 'Совместимы на 93%. Кажется, они созданы друг для друга: она — нежная и такая семейная, он — чрезвычайно заботливый и спокойный.')
@@ -136,9 +142,10 @@ async def ifif(message : types.Message):
     elif message.text.lower() == 'рак + рыбы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 90%. Они оба принадлежат к Водной стихии, так что понимают, чего хотят — они сами и те, кого они любят.')
 
-    #лев
+@dp.message_handler()
+async def lev(message : types.Message):
 
-    elif message.text.lower() == 'лев + овен':
+    if message.text.lower() == 'лев + овен':
         await bot.send_message(message.from_user.id, 'Совместимы на 99%. Они оба знают, чего хотят. Поэтому долго не раздумывают, быть им вместе или нет.')    
     elif message.text.lower() == 'лев + телец':
     	await bot.send_message(message.from_user.id, 'Совместимы на 91%. На расстоянии они нравятся друг другу больше, чем вблизи.')
@@ -163,9 +170,10 @@ async def ifif(message : types.Message):
     elif message.text.lower() == 'лев + рыбы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 83%. Она — яркая и страстная, он — нежный и робкий. Они должны неплохо друг другу подойти.')
 
-    #дева
+@dp.message_handler()
+async def deva(message : types.Message):
 
-    elif message.text.lower() == 'дева + овен':
+    if message.text.lower() == 'дева + овен':
     	await bot.send_message(message.from_user.id, 'Совместимы на 71%. Она — земная, он — огненный. Когда они соединяются, они могут свернуть горы.')
     elif message.text.lower() == 'дева + телец':
     	await bot.send_message(message.from_user.id, 'Совместимы на 69%. Они оба земные, практичные. Им будет комфортно друг с другом. Но интересно ли?')
@@ -190,9 +198,10 @@ async def ifif(message : types.Message):
     elif message.text.lower() == 'дева + рыбы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 67%. Она – сама рациональность и практичность. Он всегда расслаблен и имеет богатое воображение. Она привыкла к четкому графику, ему же по душе спонтанность и отсутствие рамок. Найдут ли они точки соприкосновения?')
  
-    #весы
+@dp.message_handler()
+async def vesy(message : types.Message):
 
-    elif message.text.lower() == 'весы + овен':
+    if message.text.lower() == 'весы + овен':
         await bot.send_message(message.from_user.id, 'Совместимы на 82%. Она – сама мягкость и дипломатичность, он же состоит из желания и нетерпения. Кажется, они созданы друг для друга. Или…')    
     elif message.text.lower() == 'весы + телец':
     	await bot.send_message(message.from_user.id, 'Совместимы на 93%. Они так похожи: оба стремятся к гармонии и любви.')
@@ -217,9 +226,10 @@ async def ifif(message : types.Message):
     elif message.text.lower() == 'весы + рыбы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 81%. Женщина-Весы и мужчина-Рыбы вместе составят красивую пару, она — нежная и бесконфликтная, он — тонкий и понимающий.')
 
-    #скорпион
+@dp.message_handler()
+async def scorp(message : types.Message):
 
-    elif message.text.lower() == 'скорпион + овен':
+    if message.text.lower() == 'скорпион + овен':
     	await bot.send_message(message.from_user.id, 'Совместимы на 72%. Они оба страстные и знают, чего хотят. Главное, чтобы они хотели одного и того же.')
     elif message.text.lower() == 'скорпион + телец':
     	await bot.send_message(message.from_user.id, 'Совместимы на 60%. Она сама страсть, а он – покой. Она мятеж, он – безмятежность. Они действительно нуждаются друг в друге, но понимают это далеко не сразу.')
@@ -244,9 +254,10 @@ async def ifif(message : types.Message):
     elif message.text.lower() == 'скорпион + рыбы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 97%. Они оба — чувственные, страстные и нежные. Романтики между этими двумя будет море.')
  
-    #стрелец
+@dp.message_handler()
+async def strelec(message : types.Message):
 
-    elif message.text.lower() == 'стрелец + овен':
+    if message.text.lower() == 'стрелец + овен':
         await bot.send_message(message,from_user.id, 'Совместимы на 84%. Они оба яркие, огненные — довольно неплохо подходят друг другу.')    
     elif message.text.lower() == 'стрелец + телец':
     	await bot.send_message(message,from_user.id, 'Совместимы на 72%. Она довольно яркая и активная, он же не привык особенно напрягаться. Интересно, сумеет ли она хотя бы немного растормошить его?')
@@ -271,9 +282,10 @@ async def ifif(message : types.Message):
     elif message.text.lower() == 'стрелец + рыбы':
     	await bot.send_message(message,from_user.id, 'Совместимы на 71%. Часто они думают одинаково. Общее мировоззрение значит для них больше, чем страсть и влечение.')
 
-    #козерог
+@dp.message_handler()
+async def kozerog(message : types.Message):
     
-    elif message.text.lower() == 'козерог + овен':
+    if message.text.lower() == 'козерог + овен':
     	await bot.send_message(message.from_user.id, 'Совместимы на 82%. Они подходят друг другу. Правда, иногда она будет уставать от его напора.')
     elif message.text.lower() == 'козерог + телец':
         await bot.send_message(message.from_user.id, 'Совместимы на 86%. Она — само совершенство. Он — образец спокойствия и стабильности. Нужен ли им кто-то еще?')    
@@ -298,9 +310,10 @@ async def ifif(message : types.Message):
     elif message.text.lower() == 'козерог + рыбы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 67%. Она любит разговаривать начистоту, он привык уходить от прямых вопросов. Найдут ли они общий язык?')
 
-    #водолей
+ @dp.message_handler()
+async def vodoley(message : types.Message):
 
-    elif message.text.lower() == 'водолей + овен':
+    if message.text.lower() == 'водолей + овен':
     	await bot.send_message(message.from_user.id, 'Совместимы на 100%. Она – независимая и свободолюбивая, он – яркий собственник. Пожалуй, она для него – как раз то, что нужно.')
     elif message.text.lower() == 'водолей + телец':
     	await bot.send_message(message.from_user.id, 'Совместимы на 82%. Это союз стабильности и оригинальности, надежности и бесшабашности.')
@@ -325,9 +338,10 @@ async def ifif(message : types.Message):
     elif message.text.lower() == 'водолей + рыбы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 100%. У них похожие взгляды. Кажется, они сумеют понять друг друга достаточно глубоко.')
 
-    #рыбы
+@dp.message_handler()
+async def fish(message : types.Message):
 
-    elif message.text.lower() == 'рыбы + овен':
+    if message.text.lower() == 'рыбы + овен':
     	await bot.send_message(message.from_user.id, 'Совместимы на 85%. Она — мечтательная и романтичная, он — смелый и напористый. Отличное сочетание.')
     elif message.text.lower() == 'рыбы + телец':
     	await bot.send_message(message.from_user.id, 'Совместимы на 82%. Они неплохо понимают друг друга, правда, иногда он ей может показаться немного грубым и бесчувственным. А она ему — скучной и неинтересной.')
@@ -357,6 +371,3 @@ async def ifif(message : types.Message):
 	
 	
 executor.start_polling(dp, skip_updates=True, on_startup=on_startup)
-
-	
-
