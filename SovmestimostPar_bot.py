@@ -26,10 +26,8 @@ async def on_shutdown(dispatcher):
 
 @dp.message_handler(commands=['start'])
 async def command_start(message : types.Message):
-	await bot.send_message(message.from_user.id, 'Привет, я бот проверки на совместимость по знаку зодиака. Напиши ваши знаки зодиака в этот бот.')
-	await bot.send_message(message.from_user.id,  'Обязательно что бы знак женщины был слева, иначе совместимость может быть расчитана не правильно')
-	await bot.send_message(message.from_user.id, 'ПРИМЕР водолей + овен. ПРОБЕЛ между + и знаками зодиака ОБЯЗАТЕЛЕН' )
-
+	await bot.send_message(message.from_user.id, 'Привет, я бот проверки на совместимость по знаку зодиака. Напиши ваши знаки зодиака в этот бот. /n Обязательно что бы знак женщины был слева, иначе совместимость может быть расчитана не правильно /n ПРИМЕР водолей + овен. ПРОБЕЛ между + и знаками зодиака ОБЯЗАТЕЛЕН')
+	
 @dp.message_handler()
 async def oven(message : types.Message):
 
