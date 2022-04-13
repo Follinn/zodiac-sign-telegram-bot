@@ -89,29 +89,29 @@ async def telec(message : types.Message):
 @dp.message_handler()
 async def bliz(message : types.Message):
 
-    if messge.text.lower() == 'близнецы + овен':
+    if message.text.lower() == 'близнецы + овен':
     	await bot.send_message(message.from_user.id, 'Совместимы на 83%. Они составят интересную пару: она — непостоянная и ускользающая, он — страстный и импульсивный. Сумеет ли он ее удержать?')
-    elif messge.text.lower() == 'близнецы + телец':
+    elif message.text.lower() == 'близнецы + телец':
     	await bot.send_message(message.from_user.id, 'Совместимы на 73%. Она — легкая и непостоянная, он — сама стабильность и постоянство. Смогут ли они вместе достичь гармонии?')
-    elif messge.text.lower() == 'близнецы + близнецы':
+    elif message.text.lower() == 'близнецы + близнецы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 84%. Оба они — воздушны, легкие, любящие общение и развлечения. Кажется, они сумеют найти общий язык.')
-    elif messge.text.lower() == 'близнецы + рак':
+    elif message.text.lower() == 'близнецы + рак':
     	await bot.send_message(message.from_user.id, 'Совместимы на 67%. Женщина-Близнецы – воздушная, переменчивая. Мужчина-Рак – застенчивый, внутренне противоречивый. Она сможет раскрепостить его, а он обеспечит ей нежность и покой.')
-    elif messge.text.lower() == 'близнецы + лев':
+    elif message.text.lower() == 'близнецы + лев':
     	await bot.send_message(message.from_user.id, 'Совместимы на 81%. Она — живая и непосредственная, он — яркий и очень честолюбивый. Сможет ли она увлечься им?')
-    elif messge.text.lower() == 'близнецы + дева':
+    elif message.text.lower() == 'близнецы + дева':
     	await bot.send_message(message.from_user.id, 'Совместимы на 93%. Женщина-Близнецы отличается воздушностью, а мужчина-Дева — наоборот, практичностью и приземленностью. Найдут ли они о чем поговорить?')
-    elif messge.text.lower() == 'близнецы + весы':
+    elif message.text.lower() == 'близнецы + весы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 89%. Они оба — воздушные, любят общение и друг друга. Особенно друг друга.')
-    elif messge.text.lower() == 'близнецы + скорпион':
+    elif message.text.lower() == 'близнецы + скорпион':
     	await bot.send_message(message.from_user.id, 'Совместимы на 93%. Их различие в том, что она пытается не драматизировать ни при каких обстоятельствах, а он — гуру драматизации.')
-    elif messge.text.lower() == 'близнецы + стрелец':
+    elif message.text.lower() == 'близнецы + стрелец':
     	await bot.send_message(message.from_user.id, 'Совместимы на 98%. Это две противоположности. Которые, как известно, притягиваются. Со страшной силой.')
-    elif messge.text.lower() == 'близнецы + козерог':
+    elif message.text.lower() == 'близнецы + козерог':
     	await bot.send_message(message.from_user.id, 'Совместимы на 82%. Она – легка, несколько поверхностная, он – строгий, даже суровый. Кажется, сложно придумать более разных персонажей. Но они встретились и даже захотели быть вместе. Почему?')
-    elif messge.text.lower() == 'близнецы + водолей':
+    elif message.text.lower() == 'близнецы + водолей':
     	await bot.send_message(message.from_user.id, 'Совместимы на 93%. Они очень похожи. Оба принадлежат к стихии Воздуха, отсюда и глубинное взаимопонимание.')
-    elif messge.text.lower() == 'близнецы + рыбы':
+    elif message.text.lower() == 'близнецы + рыбы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 82%. Женщина-Близнецы и мужчина-Рыбы вполне могут составить счастье друг друга.')
 
 @dp.message_handler()
