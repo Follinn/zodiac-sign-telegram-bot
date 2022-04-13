@@ -33,8 +33,6 @@ async def command_start(message : types.Message):
 @dp.message_handler()
 async def ifif(message : types.Message):
 
-    #овен
-
     if message.text.lower() == 'овен + овен':
 	    await bot.send_message(message.from_user.id, 'Совместимы на 91%. Они одинаковые, но есть одно но: каждый из них настолько ярко проявляет свои гендерные роли, что они кажутся совершенно разными.')
     elif message.text.lower() == 'овен + телец':
