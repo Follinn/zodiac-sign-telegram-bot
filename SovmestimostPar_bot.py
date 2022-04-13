@@ -177,11 +177,7 @@ async def oven(message : types.Message):
     	await bot.send_message(message.from_user.id, 'Совместимы на 72%. Она — та, которая твердо стоит на ногах, он – вечно витает в облаках. Удастся ли ей спустить его на землю?')
     elif message.text.lower() == 'дева + рыбы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 67%. Она – сама рациональность и практичность. Он всегда расслаблен и имеет богатое воображение. Она привыкла к четкому графику, ему же по душе спонтанность и отсутствие рамок. Найдут ли они точки соприкосновения?')
- 
-@dp.message_handler()
-async def vesy(message : types.Message):
-
-    if message.text.lower() == 'весы + овен':
+    elif message.text.lower() == 'весы + овен':
         await bot.send_message(message.from_user.id, 'Совместимы на 82%. Она – сама мягкость и дипломатичность, он же состоит из желания и нетерпения. Кажется, они созданы друг для друга. Или…')    
     elif message.text.lower() == 'весы + телец':
     	await bot.send_message(message.from_user.id, 'Совместимы на 93%. Они так похожи: оба стремятся к гармонии и любви.')
@@ -205,11 +201,7 @@ async def vesy(message : types.Message):
     	await bot.send_message(message.from_user.id, 'Совместимы на 96%. Они оба не любят долгих выяснений отношений, а любят когда все легко, просто и хорошо.')
     elif message.text.lower() == 'весы + рыбы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 81%. Женщина-Весы и мужчина-Рыбы вместе составят красивую пару, она — нежная и бесконфликтная, он — тонкий и понимающий.')
-
-@dp.message_handler()
-async def scorp(message : types.Message):
-
-    if message.text.lower() == 'скорпион + овен':
+    elif message.text.lower() == 'скорпион + овен':
     	await bot.send_message(message.from_user.id, 'Совместимы на 72%. Они оба страстные и знают, чего хотят. Главное, чтобы они хотели одного и того же.')
     elif message.text.lower() == 'скорпион + телец':
     	await bot.send_message(message.from_user.id, 'Совместимы на 60%. Она сама страсть, а он – покой. Она мятеж, он – безмятежность. Они действительно нуждаются друг в друге, но понимают это далеко не сразу.')
@@ -233,11 +225,7 @@ async def scorp(message : types.Message):
     	await bot.send_message(message.from_user.id, 'Совместимы на 88%. Женщина-Скорпион и мужчина-Водолей сумеют поладить друг с другом. Оба они целеустремленные, бесшабашны и ценят внутреннюю свободу личности.')
     elif message.text.lower() == 'скорпион + рыбы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 97%. Они оба — чувственные, страстные и нежные. Романтики между этими двумя будет море.')
- 
-@dp.message_handler()
-async def strelec(message : types.Message):
-
-    if message.text.lower() == 'стрелец + овен':
+    elif message.text.lower() == 'стрелец + овен':
         await bot.send_message(message,from_user.id, 'Совместимы на 84%. Они оба яркие, огненные — довольно неплохо подходят друг другу.')    
     elif message.text.lower() == 'стрелец + телец':
     	await bot.send_message(message,from_user.id, 'Совместимы на 72%. Она довольно яркая и активная, он же не привык особенно напрягаться. Интересно, сумеет ли она хотя бы немного растормошить его?')
@@ -261,11 +249,7 @@ async def strelec(message : types.Message):
     	await bot.send_message(message,from_user.id, 'Совместимы на 100%. Они оба порывистые, свободные и энергичные. Их пара похожа на союз солнца и ветра — звучит очень привлекательно, правда?')
     elif message.text.lower() == 'стрелец + рыбы':
     	await bot.send_message(message,from_user.id, 'Совместимы на 71%. Часто они думают одинаково. Общее мировоззрение значит для них больше, чем страсть и влечение.')
-
-@dp.message_handler()
-async def kozerog(message : types.Message):
-    
-    if message.text.lower() == 'козерог + овен':
+    elif message.text.lower() == 'козерог + овен':
     	await bot.send_message(message.from_user.id, 'Совместимы на 82%. Они подходят друг другу. Правда, иногда она будет уставать от его напора.')
     elif message.text.lower() == 'козерог + телец':
         await bot.send_message(message.from_user.id, 'Совместимы на 86%. Она — само совершенство. Он — образец спокойствия и стабильности. Нужен ли им кто-то еще?')    
@@ -289,11 +273,7 @@ async def kozerog(message : types.Message):
     	await bot.send_message(message.from_user.id, 'Совместимы на 82%. Это очень интересная пара. Она пытается его ограничить, а он никак не ограничивается.')
     elif message.text.lower() == 'козерог + рыбы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 67%. Она любит разговаривать начистоту, он привык уходить от прямых вопросов. Найдут ли они общий язык?')
-
-@dp.message_handler()
-async def vodoley(message : types.Message):
-
-    if message.text.lower() == 'водолей + овен':
+    elif message.text.lower() == 'водолей + овен':
     	await bot.send_message(message.from_user.id, 'Совместимы на 100%. Она – независимая и свободолюбивая, он – яркий собственник. Пожалуй, она для него – как раз то, что нужно.')
     elif message.text.lower() == 'водолей + телец':
     	await bot.send_message(message.from_user.id, 'Совместимы на 82%. Это союз стабильности и оригинальности, надежности и бесшабашности.')
@@ -317,11 +297,7 @@ async def vodoley(message : types.Message):
     	await bot.send_message(message.from_user.id, 'Совместимы на 77%. Женщина-Водолей — это ураган, мужчина-Водолей — тоже. Когда они вместе, это двойной ураган — штука захватывающая и опасная.')
     elif message.text.lower() == 'водолей + рыбы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 100%. У них похожие взгляды. Кажется, они сумеют понять друг друга достаточно глубоко.')
-
-@dp.message_handler()
-async def fish(message : types.Message):
-
-    if message.text.lower() == 'рыбы + овен':
+    elif message.text.lower() == 'рыбы + овен':
     	await bot.send_message(message.from_user.id, 'Совместимы на 85%. Она — мечтательная и романтичная, он — смелый и напористый. Отличное сочетание.')
     elif message.text.lower() == 'рыбы + телец':
     	await bot.send_message(message.from_user.id, 'Совместимы на 82%. Они неплохо понимают друг друга, правда, иногда он ей может показаться немного грубым и бесчувственным. А она ему — скучной и неинтересной.')
