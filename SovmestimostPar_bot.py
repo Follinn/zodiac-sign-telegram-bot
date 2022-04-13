@@ -310,7 +310,7 @@ async def kozerog(message : types.Message):
     elif message.text.lower() == 'козерог + рыбы':
     	await bot.send_message(message.from_user.id, 'Совместимы на 67%. Она любит разговаривать начистоту, он привык уходить от прямых вопросов. Найдут ли они общий язык?')
 
- @dp.message_handler()
+@dp.message_handler()
 async def vodoley(message : types.Message):
 
     if message.text.lower() == 'водолей + овен':
