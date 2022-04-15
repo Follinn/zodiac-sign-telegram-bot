@@ -248,77 +248,77 @@ async def oven(message : types.Message):
     elif message.text.lower() == 'стрелец + рыбы':
         await bot.send_message(message,from_user.id, '<b>♐Совместимы на 71%♓</b>\n\nЧасто они думают одинаково. Общее мировоззрение значит для них больше, чем страсть и влечение.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'козерог + овен':
-        await bot.send_message(message.from_user.id, 'Совместимы на 82%♈</b>\n\nОни подходят друг другу. Правда, иногда она будет уставать от его напора.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♑Совместимы на 82%♈</b>\n\nОни подходят друг другу. Правда, иногда она будет уставать от его напора.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'козерог + телец':
-        await bot.send_message(message.from_user.id, 'Совместимы на 86%♉</b>\n\nОна — само совершенство. Он — образец спокойствия и стабильности. Нужен ли им кто-то еще?', parse_mode=types.ParseMode.HTML)    
+        await bot.send_message(message.from_user.id, '<b>♑Совместимы на 86%♉</b>\n\nОна — само совершенство. Он — образец спокойствия и стабильности. Нужен ли им кто-то еще?', parse_mode=types.ParseMode.HTML)    
     elif message.text.lower() == 'козерог + близнецы':
-        await bot.send_message(message.from_user.id, 'Совместимы на 71%♊</b>\n\nОна серьезная, строгая, правильная. Он – разгильдяй. Герой, от которого все без ума. Все, кроме неприступной женщины-Козерога.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♑Совместимы на 71%♊</b>\n\nОна серьезная, строгая, правильная. Он – разгильдяй. Герой, от которого все без ума. Все, кроме неприступной женщины-Козерога.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'козерог + рак':
-        await bot.send_message(message.from_user.id, 'Совместимы на 82%♋</b>\n\nОни — прямые противоположности друг друга. Интересно, что их все-таки связывает?', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♑Совместимы на 82%♋</b>\n\nОни — прямые противоположности друг друга. Интересно, что их все-таки связывает?', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'козерог + лев':
-        await bot.send_message(message.from_user.id, 'Совместимы на 83%♌</b>\n\nВозможно, ее будут раздражать его царские замашки.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♑Совместимы на 83%♌</b>\n\nВозможно, ее будут раздражать его царские замашки.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'козерог + дева':
-        await bot.send_message(message.from_user.id, 'Совместимы на 85%♍</b>\n\nОна — целеустремленная и прагматичная, он — «весь в себе»: практичный, работящий, эмоционально-закрытый. Они так похожи — не будет ли им скучно?', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♑Совместимы на 85%♍</b>\n\nОна — целеустремленная и прагматичная, он — «весь в себе»: практичный, работящий, эмоционально-закрытый. Они так похожи — не будет ли им скучно?', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'козерог + весы':
-        await bot.send_message(message.from_user.id, 'Совместимы на 81%♎</b>\n\nМужчина-Весы, безусловно, сумеет найти подход к женщине-Козерогу. Она, в свою очередь, одарит его своим вниманием, которое, к слову, перепадает немногим.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♑Совместимы на 81%♎</b>\n\nМужчина-Весы, безусловно, сумеет найти подход к женщине-Козерогу. Она, в свою очередь, одарит его своим вниманием, которое, к слову, перепадает немногим.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'козерог + скорпион':
-        await bot.send_message(message.from_user.id, 'Совместимы на 100%♏</b>\n\nЖенщина-Козерог – воплощение холодной страсти. Она само совершенство, но некому растопить ее лед. Постойте, а как же мужчина-Скорпион?', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♑Совместимы на 100%♏</b>\n\nЖенщина-Козерог – воплощение холодной страсти. Она само совершенство, но некому растопить ее лед. Постойте, а как же мужчина-Скорпион?', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'козерог + стрелец':
-        await bot.send_message(message.from_user.id, 'Совместимы на 93%♐</b>\n\nОни оба любят достигать своих целей, но они у них такие разные. Женщина-Козерог и мужчина-Стрелец, несомненно, привлекут друг друга, но надолго ли?', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♑Совместимы на 93%♐</b>\n\nОни оба любят достигать своих целей, но они у них такие разные. Женщина-Козерог и мужчина-Стрелец, несомненно, привлекут друг друга, но надолго ли?', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'козерог + козерог':
-        await bot.send_message(message.from_user.id, 'Совместимы на 84%♑</b>\n\nОни стоят друг друга. Оба практичные, целеустремленные и… зацикленные на себе.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♑Совместимы на 84%♑</b>\n\nОни стоят друг друга. Оба практичные, целеустремленные и… зацикленные на себе.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'козерог + водолей':
-        await bot.send_message(message.from_user.id, 'Совместимы на 82%♒</b>\n\nЭто очень интересная пара. Она пытается его ограничить, а он никак не ограничивается.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♑Совместимы на 82%♒</b>\n\nЭто очень интересная пара. Она пытается его ограничить, а он никак не ограничивается.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'козерог + рыбы':
-        await bot.send_message(message.from_user.id, 'Совместимы на 67%♓</b>\n\nОна любит разговаривать начистоту, он привык уходить от прямых вопросов. Найдут ли они общий язык?', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♑Совместимы на 67%♓</b>\n\nОна любит разговаривать начистоту, он привык уходить от прямых вопросов. Найдут ли они общий язык?', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'водолей + овен':
-        await bot.send_message(message.from_user.id, 'Совместимы на 100%♈</b>\n\nОна – независимая и свободолюбивая, он – яркий собственник. Пожалуй, она для него – как раз то, что нужно.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♒Совместимы на 100%♈</b>\n\nОна – независимая и свободолюбивая, он – яркий собственник. Пожалуй, она для него – как раз то, что нужно.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'водолей + телец':
-        await bot.send_message(message.from_user.id, 'Совместимы на 82%♉</b>\n\nЭто союз стабильности и оригинальности, надежности и бесшабашности.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♒Совместимы на 82%♉</b>\n\nЭто союз стабильности и оригинальности, надежности и бесшабашности.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'водолей + близнецы':
-        await bot.send_message(message.from_user.id, 'Совместимы на 93%♊</b>\n\nОни оба любят легкость и свободу в отношениях. Кажется, это идеальная пара.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♒Совместимы на 93%♊</b>\n\nОни оба любят легкость и свободу в отношениях. Кажется, это идеальная пара.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'водолей + рак':
-        await bot.send_message(message.from_user.id, 'Совместимы на 66%♋</b>\n\nОна стремится к свободе, он — к безопасности. Кажется, их графики не пересекаются. Хотя, постойте…', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♒Совместимы на 66%♋</b>\n\nОна стремится к свободе, он — к безопасности. Кажется, их графики не пересекаются. Хотя, постойте…', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'водолей + лев':
-        await bot.send_message(message.from_user.id, 'Совместимы на 92%♌</b>\n\nОни притягиваются, как и положено противоположностям. И, соответственно, отталкиваются.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♒Совместимы на 92%♌</b>\n\nОни притягиваются, как и положено противоположностям. И, соответственно, отталкиваются.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'водолей + дева':
-        await bot.send_message(message.from_user.id, 'Совместимы на 67%♍</b>\n\nОни довольно разные. Она любит свободу, а он – порядок.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♒Совместимы на 67%♍</b>\n\nОни довольно разные. Она любит свободу, а он – порядок.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'водолей + весы':
-        await bot.send_message(message.from_user.id, 'Совместимы на 100%♎</b>\n\nОни оба принадлежат к стихии воздуха, она – немного более оригинальная и свободолюбивая, он же приверженец долгих и глубоких отношений.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♒Совместимы на 100%♎</b>\n\nОни оба принадлежат к стихии воздуха, она – немного более оригинальная и свободолюбивая, он же приверженец долгих и глубоких отношений.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'водолей + скорпион':
-        await bot.send_message(message.from_user.id, 'Совместимы на 89%♏</b>\n\nОна нежная, он страстный. Возможно, это оно из лучших сочетаний.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♒Совместимы на 89%♏</b>\n\nОна нежная, он страстный. Возможно, это оно из лучших сочетаний.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'водолей + стрелец':
-        await bot.send_message(message.from_user.id, 'Совместимы на 100%♐</b>\n\nОни очень похожи: оба свободолюбивые и жизнерадостные. Возможно, они нашли друг друга.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♒Совместимы на 100%♐</b>\n\nОни очень похожи: оба свободолюбивые и жизнерадостные. Возможно, они нашли друг друга.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'водолей + козерог':
-        await bot.send_message(message.from_user.id, 'Совместимы на 92%♑</b>\n\nОна-оригинальна и свободолюбивая, он – суров, серьезен, но все-таки довольно мил. Интересно, сможет ли он удержать ее?', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♒Совместимы на 92%♑</b>\n\nОна-оригинальна и свободолюбивая, он – суров, серьезен, но все-таки довольно мил. Интересно, сможет ли он удержать ее?', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'водолей + водолей':
-        await bot.send_message(message.from_user.id, 'Совместимы на 77%♒</b>\n\nЖенщина-Водолей — это ураган, мужчина-Водолей — тоже. Когда они вместе, это двойной ураган — штука захватывающая и опасная.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♒Совместимы на 77%♒</b>\n\nЖенщина-Водолей — это ураган, мужчина-Водолей — тоже. Когда они вместе, это двойной ураган — штука захватывающая и опасная.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'водолей + рыбы':
-        await bot.send_message(message.from_user.id, 'Совместимы на 100%♓</b>\n\nУ них похожие взгляды. Кажется, они сумеют понять друг друга достаточно глубоко.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♒Совместимы на 100%♓</b>\n\nУ них похожие взгляды. Кажется, они сумеют понять друг друга достаточно глубоко.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'рыбы + овен':
-        await bot.send_message(message.from_user.id, 'Совместимы на 85%♈</b>\n\nОна — мечтательная и романтичная, он — смелый и напористый. Отличное сочетание.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♓Совместимы на 85%♈</b>\n\nОна — мечтательная и романтичная, он — смелый и напористый. Отличное сочетание.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'рыбы + телец':
-        await bot.send_message(message.from_user.id, 'Совместимы на 82%♉</b>\n\nОни неплохо понимают друг друга, правда, иногда он ей может показаться немного грубым и бесчувственным. А она ему — скучной и неинтересной.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♓Совместимы на 82%♉</b>\n\nОни неплохо понимают друг друга, правда, иногда он ей может показаться немного грубым и бесчувственным. А она ему — скучной и неинтересной.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'рыбы + близнецы':
-        await bot.send_message(message.from_user.id, 'Совместимы на 81%♊</b>\n\nОни и похожи, и очень отличаются. Попробуем разобраться, чем именно.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♓Совместимы на 81%♊</b>\n\nОни и похожи, и очень отличаются. Попробуем разобраться, чем именно.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'рыбы + рак':
-        await bot.send_message(message.from_user.id, 'Совместимы на 83%♋</b>\n\nОни очень похожи. Непонятно только, это плюс в их случае или минус.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♓Совместимы на 83%♋</b>\n\nОни очень похожи. Непонятно только, это плюс в их случае или минус.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'рыбы + лев':
-        await bot.send_message(message.from_user.id, 'Совместимы на 95%♌</b>\n\nОна – нежная и неуловимая, он – харизматичный, знает о себе многое, в основном то, что он лучший. Сумеет ли он «поймать» ее?', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♓Совместимы на 95%♌</b>\n\nОна – нежная и неуловимая, он – харизматичный, знает о себе многое, в основном то, что он лучший. Сумеет ли он «поймать» ее?', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'рыбы + дева':
-        await bot.send_message(message.from_user.id, 'Совместимы на 100%♍</b>\n\nОна погружена в себя, он практичен и реалистичен. Есть ли у них что-то общее?', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♓Совместимы на 100%♍</b>\n\nОна погружена в себя, он практичен и реалистичен. Есть ли у них что-то общее?', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'рыбы + весы':
-        await bot.send_message(message.from_user.id, 'Совместимы на 100%♎</b>\n\nОни оба нерешительные и стремящиеся к гармонии.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♓Совместимы на 100%♎</b>\n\nОни оба нерешительные и стремящиеся к гармонии.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'рыбы + скорпион':
-        await bot.send_message(message.from_user.id, 'Совместимы на 100%♏</b>\n\nОни оба достаточно чувственны и эмоцинальны, чтобы прекрасно понимать друг друга. Где та грань, за которой их отличия начнут проявляться настолько ярко, чтобы они наконец заметили их?..', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♓Совместимы на 100%♏</b>\n\nОни оба достаточно чувственны и эмоцинальны, чтобы прекрасно понимать друг друга. Где та грань, за которой их отличия начнут проявляться настолько ярко, чтобы они наконец заметили их?..', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'рыбы + стреле':
-        await bot.send_message(message.from_user.id, 'Совместимы на 74%♐</b>\n\nЖенщина-Рыбы, пожалуй, самая неуловимая из всех. Мужчина-Стрелец тоже неуловим, но по-своему. Кто кого будет догонять?', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♓Совместимы на 74%♐</b>\n\nЖенщина-Рыбы, пожалуй, самая неуловимая из всех. Мужчина-Стрелец тоже неуловим, но по-своему. Кто кого будет догонять?', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'рыбы + козерог':
-        await bot.send_message(message.from_user.id, 'Совместимы на 93%♑</b>\n\nЖенщина-Рыбы и мужчина-Козерог — тот редкий случай, когда все сходится. Ну, или почти все.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♓Совместимы на 93%♑</b>\n\nЖенщина-Рыбы и мужчина-Козерог — тот редкий случай, когда все сходится. Ну, или почти все.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'рыбы + водолей':
-        await bot.send_message(message.from_user.id, 'Совместимы на 93%♒</b>\n\nОни похожи: он не признает границ, а для нее любые границы уже давно стерты.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♓Совместимы на 93%♒</b>\n\nОни похожи: он не признает границ, а для нее любые границы уже давно стерты.', parse_mode=types.ParseMode.HTML)
     elif message.text.lower() == 'рыбы + рыбы':
-        await bot.send_message(message.from_user.id, 'Совместимы на 100%м</b>\n\nЭто союз двух неуловимых и загадочных личностей, одна из которых к тому же и женщина.', parse_mode=types.ParseMode.HTML)
+        await bot.send_message(message.from_user.id, '<b>♓Совместимы на 100%♓</b>\n\nЭто союз двух неуловимых и загадочных личностей, одна из которых к тому же и женщина.', parse_mode=types.ParseMode.HTML)
     else:
         await bot.send_message(message.from_user.id, 'Я вас не понимаю. Возможно вы написали без пробелов между знаками зодиака и + должен быть пробел', parse_mode=types.ParseMode.HTML)
     
