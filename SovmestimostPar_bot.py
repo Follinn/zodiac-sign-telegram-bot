@@ -5,7 +5,7 @@ from aiogram.dispatcher import Dispatcher
 from aiogram.utils import executor
 from aiogram.utils.executor import start_webhook
 
-TOKEN = ('5325195406:AAEGEoaPwFlzpfoYMZdGw4oH1Ka_EcHFxsQ')
+TOKEN = ('Токен')
 bot = Bot(TOKEN)
 dp = Dispatcher(bot)
 HEROKU_APP_NAME = os.getenv('sovmestimostparbot')
